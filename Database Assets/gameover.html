@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Mancala by Team RestXQ</title>
+    <link rel="stylesheet" href="../static/stylesheet.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../static/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../static/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+    <div id="main">
+        <h1>Congratulations!&#160;<b id="winner"></b>&#160;won the game!</h1>
+        <table id="scoreboard">
+            <tr>
+                <th>ID</th>
+                <th>Player 1</th>
+                <th>Player 2</th>
+                <th>Final Score</th>
+            </tr>
+        </table>
+        <div class="filler"></div>
+        <p>Enter your names:</p>
+        <form id="playernames" action="/savescore" method="GET">
+            <div class="form-item">
+                <input type="text" name="player1" id="player1"></input>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="player1"><span class="tab">&#8632;</span> Player 1</label>
+            </div>
+            <div class="form-item">
+                <input type="text" name="player2" id="player2"></input>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="player2"><span class="tab">&#8632;</span> Player 2</label>
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Save"></input>
+            </div>
+        </form>
+        <footer>Made by Team RestXQ</footer>
+    </div>
+</body>
+
+</html>

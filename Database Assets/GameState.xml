@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameState>
+    <meta>
+        <!-- Unique id of the game. -->
+        <sessionId></sessionId>
+        <!-- Currently applied theme -->
+        <currentTheme></currentTheme>
+        <currentPlayer></currentPlayer>
+        <!-- Status vom Spiel true=beendet false=beim laufen -->
+        <gameOver></gameOver>
+    </meta>
+
+    <!-- Player names are stored here and used for the scoreboard -->
+    <players>
+        <player id="1"></player>
+        <player id="2"></player>
+    </players>
+
+    <!--    Hier kommen zusaezliche Informationen ueber das
+            request.  -->
+    <request>
+        <statusCode></statusCode>
+        <statusMessage></statusMessage>
+    </request>
+
+    <!-- Status of the GameBoard -->
+    <gameboard>
+        <!-- Mancala ganz links, auch als Score von Spieler 2 -->
+        <Token id="0"></Token>
+        
+        <!-- Die Felder ganz unten, geht von links nach rechts.  -->
+        <Token id="1"></Token>
+        <Token id="2"></Token>
+        <Token id="3"></Token>
+        <Token id="4"></Token>
+        <Token id="5"></Token>
+        <Token id="6"></Token>
+
+        <!-- Mancala ganz rechts, auch als Score von Spieler 1 -->
+        <Token id="7"></Token>
+        
+        <!-- Die Felder ganz oben, geht von rechts nach links.  -->
+        <Token id="8"></Token>
+        <Token id="9"></Token>
+        <Token id="10"></Token>
+        <Token id="11"></Token>
+        <Token id="12"></Token>
+        <Token id="13"></Token>
+    </gameboard>
+</GameState>
